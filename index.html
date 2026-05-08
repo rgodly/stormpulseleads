@@ -39,6 +39,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);fon
   text-transform:uppercase;
 }
 .topbar-dot{width:7px;height:7px;border-radius:50%;background:#fff;animation:blink 1.4s ease-in-out infinite}
+.topbar-short{display:none}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0.3}}
 
 /* ── NAV ── */
@@ -415,6 +416,8 @@ footer{
   footer{flex-direction:column;gap:16px;text-align:center;padding:32px 40px}
 }
 @media(max-width:600px){
+  .topbar-full{display:none}
+  .topbar-short{display:inline}
   nav{padding:0 16px}
   .logo{font-size:14px;letter-spacing:-0.03em;white-space:nowrap}
   .hero{padding:40px 20px;text-align:center}
@@ -445,7 +448,7 @@ footer{
 <!-- TOPBAR -->
 <div class="topbar">
   <span class="topbar-dot"></span>
-  Live monitoring: Dallas · Tarrant · Collin · Denton · Rockwall
+  <span class="topbar-full">Live monitoring: Dallas · Tarrant · Collin · Denton · Rockwall</span><span class="topbar-short">Live monitoring: 5 DFW counties</span>
 </div>
 
 <!-- NAV -->
