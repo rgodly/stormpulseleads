@@ -59,7 +59,7 @@ nav{
   background:var(--red);color:#fff;
   font-family:'Syne',sans-serif;font-weight:600;font-size:13px;
   padding:9px 20px;border-radius:4px;text-decoration:none;
-  letter-spacing:0.02em;
+  letter-spacing:0.02em;white-space:nowrap;
   transition:background 0.15s;
 }
 .nav-cta:hover{background:#c42d22}
@@ -415,7 +415,8 @@ footer{
   footer{flex-direction:column;gap:16px;text-align:center;padding:32px 40px}
 }
 @media(max-width:600px){
-  nav{padding:0 20px}
+  nav{padding:0 16px}
+  .logo{font-size:14px;letter-spacing:-0.03em;white-space:nowrap}
   .hero{padding:40px 20px;text-align:center}
   .hero-sub{max-width:100%}
   .radar-shell{width:min(260px,72vw);height:min(260px,72vw)}
